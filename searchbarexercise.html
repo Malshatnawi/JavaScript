@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+</head>
+<body>
+    <input type="text" id="searchbar">
+    <button id="bt1" onclick="search();">GO</button>
+
+    
+
+
+    <script>
+        
+
+        function search(){
+            var x = document.getElementById("searchbar").value;
+            var link = "https://www."+x+".com";
+            window.location.href =link
+        }
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>

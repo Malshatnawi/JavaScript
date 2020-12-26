@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show a random img from a list of imgs</title>
+</head>
+<body>
+
+    <img id="boy" src="https://cdn.iconscout.com/icon/free/png-256/funny-1659509-1410031.png" alt="boy">
+    <img id="worker" src="https://icons.iconarchive.com/icons/martin-berube/people/256/construction-worker-icon.png" alt="worker">
+    <img id="man" src="https://iconarchive.com/icons/martin-berube/character/256/Man-icon.png" alt="man">
+
+
+    <br>
+    <button id="bt1" onclick="showRandomPic();">Show Random Pic</button>
+
+
+
+    <script>
+        var x=document.getElementById("boy");
+        var y=document.getElementById("worker");
+        var z=document.getElementById("man");
+        x.style.display="none";
+        y.style.display="none";
+        z.style.display="none";
+
+        function showRandomPic(){
+            var arr=[x,y,z];
+            var randpic= arr[Math.floor(Math.random()*arr.length)];
+            randpic.style.display="block";
+        }
+
+    </script>
+    
+</body>
+</html>

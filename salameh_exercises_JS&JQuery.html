@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salameh Exercises on JS & JQuery</title>
+    <script>
+        function wrongAns(){
+            document.getElementById("theRightAnsIs").innerHTML="WRONG ANSWER!!"
+            document.getElementById("wrong1").style.color="red";
+            document.getElementById("wrong2").style.color="red";
+            document.getElementById("wrong3").style.color="red";
+            document.getElementById("wrong4").style.color="red";
+            document.getElementById("right1").style.color="green";
+            document.getElementById("amman").innerHTML="Amman";
+            
+        }
+        function rightAns(){
+            document.getElementById("theRightAnsIs").innerHTML="RIGHT ANSWER!!";
+            document.getElementById("wrong1").style.color="red";
+            document.getElementById("wrong2").style.color="red";
+            document.getElementById("wrong3").style.color="red";
+            document.getElementById("wrong4").style.color="red";
+            document.getElementById("right1").style.color="green";
+        
+        }
+
+
+        function countWords(){
+	        s = document.getElementById("inputString").value;
+	        s = s.replace(/(^\s*)|(\s*$)/gi,"");
+	        s = s.replace(/[ ]{2,}/gi," ");
+	        s = s.replace(/\n /,"\n");
+	        document.getElementById("wordcount").value = s.split(' ').length;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <h3>Where is Orange?</h3>
+        <input onclick="wrongAns();" type="radio" name="orangeLocation">
+        <label   id="wrong1">NewYork City</label>
+        <br>
+        <input onclick="wrongAns();" type="radio" name="orangeLocation">
+        <label  id="wrong2">Irbid</label>
+        <br>
+        <input onclick="wrongAns();"   type="radio" name="orangeLocation">
+        <label  id="wrong3">Ontario</label>
+        <br>
+        <input onclick="rightAns();"  type="radio" name="orangeLocation">
+        <label  id="right1">Amman</label>
+        <br>
+        <input onclick="wrongAns();"  type="radio" name="orangeLocation">
+        <label id="wrong4">Cape Town</label>
+
+
+    </form>
+    <br>
+    <div id="theRightAnsIs"></div>
+    <br>
+    <h5>The correct answer is:</h5>
+    <div id="amman"></div>
+    <br>
+
+    <textarea name="inputString" cols="50" rows="4">Text to count</textarea>
+    <br>
+    <input type="button" name="Convert" value="Count Words" onClick="countWords();"> 
+    <input name="wordcount" type="text" value="" size="6">
+    
+
+    
+
+    
+</body>
+</html>

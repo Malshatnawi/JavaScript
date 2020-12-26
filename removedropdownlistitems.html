@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove first item from a drop-down list using a button</title>
+</head>
+<body>
+    <select id="selectid">
+        <option value="">Select</option>
+        <option value="">First</option>
+        <option value="">Second</option>
+        <option value="">Third</option>
+        <option value="">Fourth</option>
+        <option value="">Fifth</option>
+    </select>
+
+    
+    <button id="bt1" onclick="removeFirstItem()">Remove first list item</button>
+    
+
+    <script>
+        function removeFirstItem(){
+            var a = document.getElementById("selectid")
+            a.removeChild(a.childNodes[0])   
+            }
+        
+
+    </script>
+</body>
+</html>

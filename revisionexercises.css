@@ -1,0 +1,139 @@
+#calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+    grid-template-areas: 
+    "oper oper oper plus"
+    "result result result plus"
+    "one two three minus"
+    "clear clear clear equal"
+    ;
+
+    column-gap: 0.3em;
+    row-gap: 0.3em;
+    height: 30em;
+    width: 30%;
+
+    
+}
+
+
+#operations{
+    grid-area: oper;
+    background-color: skyblue;
+    border-radius: 3em;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+
+    
+    }
+
+#result{
+    grid-area: result;
+    background-color: cadetblue;
+    border-radius: 3em;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+
+
+    
+}
+
+#plus{
+    grid-area: plus;
+    background-color: tomato;
+    border-radius: 3em;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+
+}
+
+
+#minus{
+    grid-area: minus;
+    background-color: pink;
+    border-radius: 3em;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+
+
+}
+
+#one{
+    grid-area: one;
+    background-color: palegreen;
+    border-radius: 3em;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+
+
+}
+
+
+#two{
+    grid-area: two;
+    background-color: indianred;
+    border-radius: 3em;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+
+
+}
+
+#three{
+    grid-area: three;
+    background-color: coral;
+    border-radius: 3em;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+
+
+}
+
+
+#equal{
+    background-color: royalblue;
+    grid-area: equal;
+    border-radius: 3em;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+
+
+}
+
+#clear{
+    grid-area: clear;
+    background-color: green;
+    border-radius: 3em;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+
+
+}
+
+
+#div1,#div2{
+    height: 20em;
+    text-align: center;
+    background-color: plum;
+    width: 50%;
+}
+

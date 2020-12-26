@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Javascript</title>
+</head>
+<body>
+    <h1>My Shopping Cart</h1>
+    <input type="button" value="Add to Cart" onclick="myFunction();" style="margin-bottom: 2em;">
+    <table border="1em" id="mytable">
+        <tr>
+            <td>Product ID</td>
+            <td>Product Description</td>
+            <td>Quantity</td>
+            <td>Expiary Date</td>
+
+        </tr>
+    </table>
+    <table border="1em" id="secondtable">
+        
+    </table>
+
+
+
+<script>
+    function myFunction(){
+        var tbl = document.getElementById("mytable");
+        var row = tbl.insertRow();
+        var cell1 = row.insertCell();
+        var cell2 = row.insertCell();
+        var cell3 = row.insertCell();
+        var cell4 = row.insertCell();
+        cell1.innerHTML="S321";
+        cell2.innerHTML="Baby Toy";
+        cell3.innerHTML="2";
+        cell4.innerHTML="09-2021";
+
+    }
+
+
+</script>
+</body>
+</html>
+

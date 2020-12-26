@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #3: Changing images
+    </title>
+</head>
+<body>
+    <h1>Where do you want to pursue your education?</h1>
+    <select name="flags" id="flags">
+
+        <option id="flags1" value="" onclick="flagsFu();">Select</option>
+
+        <option id="flags1" value="" onclick="flagsFunction();">Canada</option>
+        <option id="flags1" value="./Images/Ge" onclick="flagsFunction();">Germany</option>
+        <option id="flags1" value="Jordan" onclick="flagsFunction();">Jordan</option>
+        <option id="flags1" value="USA" onclick="flagsFunction();">USA</option>
+
+    </select>
+    <br>
+    <div id="flagImg" style="height: 15em; width: 15em; border: 0.25em solid black; margin-top: 1em;" >
+        <img src="./Images/NoImage.png" alt="noimg" id="imgs">
+
+
+    </div>
+    <br>
+
+
+    <img src="./Images/Canadaflag.png" alt="noimg" id="CanadaFlag">
+    <img src="./Images/germanyflag.png" alt="noimg" id="GermanyFlag">
+    <img src="./Images/jordanflag.png" alt="noimg" id="JordanFlag">
+    <img src="./Images/usaflag.png" alt="noimg" id="USAflag">
+
+
+
+
+
+    <script>
+        function flagsFunction(){
+            var x=document.getElementById("flags1").value;
+            if (x=="Canada"){
+                var a= document.getElementById("CanadaFlag");
+
+                document.getElementById("flagImg").style.backgroundImage="./Images/Canda";
+
+            
+            }
+            var x=document.getElementById("flags1").value;
+            else if (x=="Germany"){
+                var a= document.getElementById("CanadaFlag");
+                document.getElementById("flagImg").style.backgroundColor=
+
+            
+            }
+
+            
+        }
+        
+
+
+    </script>
+</body>
+</html>
